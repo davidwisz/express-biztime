@@ -14,6 +14,7 @@ router.get("/",
       return res.json(results.rows);
     }
     catch (err) {
+      console.log(err);
       return next(err);
     }
   });
